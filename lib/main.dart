@@ -2,7 +2,6 @@ import 'package:child_care/views/screens/callender_attendence.dart';
 import 'package:child_care/views/screens/photogallery/image_gallery_screen.dart';
 import 'package:child_care/views/screens/loginScreens/intro1.dart';
 import 'package:child_care/views/screens/loginScreens/signIn_page.dart';
-import 'package:child_care/views/screens/test.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,9 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: IntroPage1(),
-      home: AttendencePage(),
-      // home: MyAppTest(),
+      home: IntroPage1(),
     );
   }
 }

@@ -1,6 +1,5 @@
 import 'package:child_care/views/common/student_detail_card.dart';
 import 'package:child_care/views/common/student_list_card.dart';
-import 'package:child_care/views/screens/test.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -79,6 +78,13 @@ class _AttendencePageState extends State<AttendencePage> {
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+            child: Text(
+              "Full Details of the day",
+              style: TextStyle(decoration: TextDecoration.underline),
+            ),
+          ),
           Expanded(
             child: ListView.builder(
               shrinkWrap: true,
@@ -94,6 +100,8 @@ class _AttendencePageState extends State<AttendencePage> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
                           padding: const EdgeInsets.symmetric(
